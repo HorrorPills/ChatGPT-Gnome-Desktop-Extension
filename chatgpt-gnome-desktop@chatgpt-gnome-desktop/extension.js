@@ -21,6 +21,8 @@ function init() {
                          //set menubar icon
                          let gicon = Gio.icon_new_for_string(Me.path + "/icons/chatgpt_icon.png");
                          icon = new St.Icon({ gicon });
+    //let icon = new St.Icon({ icon_name: 'system-run-symbolic',
+                             //style_class: 'system-status-icon' });
 
     button.set_child(icon);
     button.connect('button-press-event', _handleClick);
@@ -42,13 +44,14 @@ function _handleClick() {
         //make the window non resizeable
         window.resizable = false;
 
+        //enable scrolling inside the window
+        scrolled_window = new Gtk.ScrolledWindow();
         //open the website
         webView = new Webkit.WebView();
-        //enable scrolling inside the window
-             // !!! NOT YET IMPLEMENTED !!!
+        scrolled_window.add(webView);
         //load the URL and add it to WebView
         webView.load_uri('https://chat.openai.com/chat');
-        window.add(webView);
+        window.add(scrolled_window);
         //window positioning
         window.set_position(Gtk.WindowPosition.MOUSE);
         //skip showing in the taskbar
