@@ -3,9 +3,7 @@
 
 ChatGPT Gnome Desktop Extension | Talk with ChatGPT from your menubar!
 
-
-
-![Screenshot from 2023-01-13 14-55-06](https://user-images.githubusercontent.com/21268783/212336280-85fd88a1-dbf1-4982-8894-1619533867c8.png)
+![Screenshot from 2023-01-13 15-03-28](https://user-images.githubusercontent.com/21268783/212338116-41a5bfc6-25dd-4288-bc17-59e5c80ba4f7.png)
 
 This Gnome Desktop Extension adds a ChatGPT chatbox to your desktop experience.
 
