@@ -1,0 +1,12 @@
+{
+    "name": "ChatGPT for Gnome Desktop",
+    "description": "Access ChatGPT From Your Gnome-Desktop!",
+    "version": "1.0",
+    "uuid": "chatgpt-gnome-desktop@chatgpt-gnome-desktop",
+    "shell-version": [       
+		"42"
+    ],
+    "url": "https://www.example.com",
+    "author": "Rafal Mioduszewski",
+    "icon": "web-browser-symbolic"
+}
