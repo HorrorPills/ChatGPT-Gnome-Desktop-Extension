@@ -16,8 +16,41 @@ To-do & Info:
 
 - Enable mouse-wheel scrolling (currently only keyboard-arow-scrolling is supported)
 - Clicking within the extension window is buggy (Using keyboard navigation is recommended). This will be fixed.
+- Add Gnome 43 support.
 
 How to install:
 
 - Place the `chatgpt-gnome-desktop@chat-gpt-gnome-desktop` folder in `~/.local/share/gnome-shell/extensions/`
 - Restart Gnome with `Alt`+`F2` then type `r` or Log out & Log back in to Gnome.
+
+KNOWN ISSUES AND POSSIBLE FIX:
+
+- Possibly not fully working on Wayland. Use Xorg.
+- `Requiring WebKit2, version none: Requiring namespace 'Gtk' version '4.0', but '3.0' is already loaded` can appear on Gnome 43.
+
+On Ubuntu and Debian-based distributions, you can install the latest version of GTK 4 by running the following command in the terminal:
+
+`sudo apt install libgtk-4-dev`
+
+On Arch Linux and its derivatives, you can install GTK 4 by running the following command in the terminal:
+
+`sudo pacman -S gtk4`
+
+On Fedora, you can install GTK 4 by running the following command in the terminal:
+
+`sudo dnf install gtk4-devel`
+
+- Once you have GTK installed, you can then set the default version by modifying your environment variables. On Ubuntu or Debian-based systems, you can do this by adding the following line to your `.bashrc` or `.bash_profile` file:
+
+`export GTK_VERSION=4`
+
+You may also need to set the GDK_BACKEND environment variable.
+
+`export GDK_BACKEND=x11`
+
+You will need to restart your terminal or run the command source ~/.bashrc for the changes to take effect.
+
+On other distributions, you may need to use a different package manager or set the environment variables in a different way.
+
+
+
