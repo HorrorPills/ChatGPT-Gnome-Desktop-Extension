@@ -47,7 +47,7 @@ function _handleClick() {
         //enable scrolling inside the window
              // !!! NOT YET IMPLEMENTED !!!
         //load the URL and add it to WebView
-        webView.load_uri('https://chat.openai.com');
+        webView.load_uri('https://chat.openai.com/chat');
         window.add(webView);
         //window positioning
         window.set_position(Gtk.WindowPosition.MOUSE);
