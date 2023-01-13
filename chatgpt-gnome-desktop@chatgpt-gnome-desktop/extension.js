@@ -21,8 +21,6 @@ function init() {
                          //set menubar icon
                          let gicon = Gio.icon_new_for_string(Me.path + "/icons/chatgpt_icon.png");
                          icon = new St.Icon({ gicon });
-    //let icon = new St.Icon({ icon_name: 'system-run-symbolic',
-                             //style_class: 'system-status-icon' });
 
     button.set_child(icon);
     button.connect('button-press-event', _handleClick);
