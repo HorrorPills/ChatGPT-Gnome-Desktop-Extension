@@ -19,9 +19,14 @@ To-do & Info:
 - Add Gnome 43 support.
 
 How to install:
-
+- Make sure you have the `gnome-shell-extensions` package installed. It allows you to turn on the Extension.
 - Place the `chatgpt-gnome-desktop@chat-gpt-gnome-desktop` folder in `~/.local/share/gnome-shell/extensions/`
 - Restart Gnome with `Alt`+`F2` then type `r` or Log out & Log back in to Gnome.
+
+
+
+
+
 
 KNOWN ISSUES AND POSSIBLE FIX:
 
