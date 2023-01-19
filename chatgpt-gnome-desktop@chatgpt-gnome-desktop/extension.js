@@ -4,7 +4,7 @@ const ExtensionUtils = imports.misc.extensionUtils;
 const Me = imports.misc.extensionUtils.getCurrentExtension();
 const Webkit = imports.gi.WebKit2;
 // Fix Webkit namespace load
-//const Webkit = imports.gi.versions.WebKit2 = '4.0';
+imports.gi.versions.WebKit2 = '4.0';
 const Gtk = imports.gi.Gtk;
 const Gio = imports.gi.Gio;
 
