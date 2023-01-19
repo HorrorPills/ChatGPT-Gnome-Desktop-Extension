@@ -11,6 +11,7 @@ Gnome just became even more powerful thanks to ChatGPT now being available from 
 EARLY VERSION | WORK IN PROGRESS
 </p>
 
+<br>
 <!-- screenshots -->
 <details markdown='1'><summary align="center">SCREENSHOTS</summary><div align="center">
 
@@ -30,16 +31,15 @@ EARLY VERSION | WORK IN PROGRESS
 
 ### HOW TO INSTALL/UNINSTALL:
 
-To install the chatgpt gnome desktop ext. run `make install`
+To install the chatgpt gnome desktop ext. clone this repo, cd into the ext dir. and run `make install`
 ```ocaml
-$ make install
+$ git clone https://github.com/HorrorPills/ChatGPT-Gnome-Desktop-Extension && cd ChatGPT-Gnome-Desktop-Extension && sudo make install
 ```
 
 To uninstall it. run `make uninstall`
 ```ocaml
-$ make uninstall
+$ git clone https://github.com/HorrorPills/ChatGPT-Gnome-Desktop-Extension && cd ChatGPT-Gnome-Desktop-Extension && sudo make uninstall
 ```
-
 
 ---
 
@@ -54,15 +54,20 @@ EXTRAS:
 
 On Ubuntu and Debian-based distributions, you can install the latest version of GTK 4 by running the following command in the terminal:
 
-`sudo apt install libgtk-4-dev`
+```ocaml
+$ sudo apt install libgtk-4-dev
+```
 
 On Arch Linux and its derivatives, you can install GTK 4 by running the following command in the terminal:
 
-`sudo pacman -S gtk4`
+```ocaml
+$ sudo pacman -S gtk4
+```
 
 On Fedora, you can install GTK 4 by running the following command in the terminal:
 
-`sudo dnf install gtk4-devel`
-
+```ocaml
+$ sudo dnf install gtk4-devel
+```
 
 
