@@ -2,27 +2,29 @@ const St = imports.gi.St;
 const Main = imports.ui.main;
 const ExtensionUtils = imports.misc.extensionUtils;
 const Me = imports.misc.extensionUtils.getCurrentExtension();
-//const Me = ExtensionUtils.getCurrentExtension();
-const Webkit = imports.gi.WebKit2;
+//const Webkit = imports.gi.WebKit2;
+// FIX for "Requiring WebKit2, version none: Requiring namespace 'Soup' version '3.0', but '2.4' is already loaded"
+const Webkit = imports.gi.versions.WebKit2 = '4.0';
 const Gtk = imports.gi.Gtk;
-//new const
 const Gio = imports.gi.Gio;
 
 
 let button;
 
 function init() {
-    button = new St.Bin({ style_class: 'panel-button',
-                         reactive: true,
-                         can_focus: true,
-                         x_expand: true,
-                         y_expand: false,
-                         track_hover: true });
-                         //set menubar icon
-                         let gicon = Gio.icon_new_for_string(Me.path + "/icons/chatgpt_icon.png");
-                         icon = new St.Icon({ gicon });
-    //let icon = new St.Icon({ icon_name: 'system-run-symbolic',
-                             //style_class: 'system-status-icon' });
+    button = new St.Bin({
+        style_class: 'panel-button',
+        reactive: true,
+        can_focus: true,
+        x_expand: true,
+        y_expand: false,
+        track_hover: true
+    });
+    //set menubar icon
+    let gicon = Gio.icon_new_for_string(Me.path + "/icons/chatgpt_icon.png");
+    icon = new St.Icon({
+        gicon
+    });
 
     button.set_child(icon);
     button.connect('button-press-event', _handleClick);
@@ -34,16 +36,17 @@ let window, webView;
 function _handleClick() {
     if (!window) {
         //set window style- in this case TOPLEVEL
-        window = new Gtk.Window({ type: Gtk.WindowType.TOPLEVEL });
+        window = new Gtk.Window({
+            type: Gtk.WindowType.TOPLEVEL
+        });
         //remove window interaction buttons
         window.decorated = false;
         //set the size of the window
         window.set_default_size(350, 550);
         //set the border radius of the window
-        
+        // !!! not yet implemented !!!       
         //make the window non resizeable
         window.resizable = false;
-
         //enable scrolling inside the window
         scrolled_window = new Gtk.ScrolledWindow();
         //open the website
