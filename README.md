@@ -14,8 +14,7 @@ This Gnome Desktop Extension adds ChatGPT to your desktop experience. Clickable 
 
 TO-DO & INFO:
 
-- Enable mouse-wheel scrolling (currently only keyboard-arow-scrolling is supported)
-- Clicking within the extension window is buggy (Using keyboard navigation is recommended). This will be fixed.
+- Clicking & Scrolling using the mouse within the extension window is buggy (Using keyboard navigation is recommended). This will be fixed.
 - Cache & Cookies storing for the comfort of not having to log in each time after system/extension restart.
 - Add Gnome 43 support (potentially fixed, testing)
 
