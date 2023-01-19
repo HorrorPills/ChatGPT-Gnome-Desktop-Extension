@@ -17,7 +17,7 @@ uninstall:
 	@printf "\n"
 	@read -p ">>> Press ENTER to uninstall the extension."
 	@rm -rf ~/.local/share/gnome-shell/extensions/chatgpt-gnome-desktop@chatgpt-gnome-desktop
-	@printf "\e[1;34m>>>\e[0m The extension is now uninstalled, You may log out or press Alt+F2 and then type r to complete the install. Thanks for testing the extension. \n"
+	@printf "\e[1;34m>>>\e[0m The extension is now uninstalled, You may log out or press Alt+F2 and then type r to complete the uninstall. Thanks for testing the extension. \n"
 
 	
 	
