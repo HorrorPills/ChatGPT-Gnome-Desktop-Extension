@@ -1,6 +1,6 @@
 # ChatGPT-Gnome-Desktop-Extension
 
-![GnomeLogoHorizontal-svg (1)](https://user-images.githubusercontent.com/21268783/213469202-c13e6f0e-a31d-4148-b996-d43aa5ac5014.png)
+![213469202-c13e6f0e-a31d-4148-b996-d43aa5ac5014 (1)](https://user-images.githubusercontent.com/21268783/213477021-f446c43b-3bb9-4d96-aa7a-ce6bb6b45aac.png)
 
 <h2><p align="center">
 Gnome just became even more powerful thanks to ChatGPT now being available from the comfort of your desktop, always ready to assist. <br>Save time on finding answers on the internet, you are now 1 click away.
