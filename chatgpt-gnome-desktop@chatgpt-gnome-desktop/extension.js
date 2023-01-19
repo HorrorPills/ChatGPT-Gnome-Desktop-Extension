@@ -3,7 +3,7 @@ const Main = imports.ui.main;
 const ExtensionUtils = imports.misc.extensionUtils;
 const Me = imports.misc.extensionUtils.getCurrentExtension();
 //const Webkit = imports.gi.WebKit2;
-// FIX for "Requiring WebKit2, version none: Requiring namespace 'Soup' version '3.0', but '2.4' is already loaded"
+// Fix Webkit namespace load
 const Webkit = imports.gi.versions.WebKit2 = '4.0';
 const Gtk = imports.gi.Gtk;
 const Gio = imports.gi.Gio;
