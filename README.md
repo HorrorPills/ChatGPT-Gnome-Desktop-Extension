@@ -1,21 +1,24 @@
-# ChatGPT-Gnome-Desktop-Extension
+<div align="center">
+ <h1>ChatGPT Gnome Desktop Extension</h1>
+ <img width="650" src="https://user-images.githubusercontent.com/119129086/213536496-c204f289-45d8-4d45-aaa9-ea72cec31143.png">
+</div>
 
-![213469202-c13e6f0e-a31d-4148-b996-d43aa5ac5014 (1)](https://user-images.githubusercontent.com/21268783/213477021-f446c43b-3bb9-4d96-aa7a-ce6bb6b45aac.png)
-
-<h2><p align="center">
+<h4><p align="center">
 Gnome just became even more powerful thanks to ChatGPT now being available from the comfort of your desktop, always ready to assist. <br>Save time on finding answers on the internet, you are now 1 click away.
 </p>
 
----
 <h2><p align="center">
 EARLY VERSION | WORK IN PROGRESS
 </p>
 
+<!-- screenshots -->
+<details markdown='1'><summary align="center">SCREENSHOTS</summary><div align="center">
+
 ![Screenshot from 2023-01-13 16-53-54](https://user-images.githubusercontent.com/21268783/212362417-1e06b82e-8abd-400a-9659-ba25611cd3ae.png)
 ![Screenshot from 2023-01-13 16-57-31](https://user-images.githubusercontent.com/21268783/212363907-ce25b9d3-dda9-4586-ae66-29fc2a118831.png)
+</div></details>
+<!-- end screenshots -->
 
-
----
  
 ### TO-DO & INFO:
 
@@ -25,13 +28,18 @@ EARLY VERSION | WORK IN PROGRESS
 
 ---
 
-### HOW TO INSTALL:
+### HOW TO INSTALL/UNINSTALL:
 
-- Make sure you have the `gnome-shell-extensions` package installed. It allows you to turn on the Extension.
-- Place the `chatgpt-gnome-desktop@chatgpt-gnome-desktop` folder in `~/.local/share/gnome-shell/extensions/`
-- Restart Gnome with `Alt`+`F2` then type `r`
-- Enable the extension inside the Gnome Extensions application.
-- Restart Gnome with `Alt`+`F2` then type `r` or Log out & Log back in to Gnome.
+To install the chatgpt gnome desktop ext. run `make install`
+```ocaml
+$ make install
+```
+
+To uninstall it. run `make uninstall`
+```ocaml
+$ make uninstall
+```
+
 
 ---
 
