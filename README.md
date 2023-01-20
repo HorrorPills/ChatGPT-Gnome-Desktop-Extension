@@ -45,14 +45,14 @@ $ git clone https://github.com/HorrorPills/ChatGPT-Gnome-Desktop-Extension && cd
 
 ---
 
-KNOWN ISSUES:
+### KNOWN ISSUES:
 
 - Possibly not fully working on Wayland. Use Xorg.
 - `Requiring WebKit2, version none: Requiring namespace 'Gtk' version '4.0', but '3.0' is already loaded` can appear on Gnome 43.
 
 ---
 
-EXTRAS:
+### EXTRAS:
 
 On Ubuntu and Debian-based distributions, you can install the latest version of GTK 4 by running the following command in the terminal:
 
