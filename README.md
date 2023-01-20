@@ -32,6 +32,8 @@ EARLY VERSION | WORK IN PROGRESS
 ### HOW TO INSTALL/UNINSTALL:
 
 To install the chatgpt gnome desktop ext. clone this repo, cd into the ext dir. and run `make install`
+<br>
+<br>`DO NOT RUN THE FOLLOWING COMMANDS AS SUDO`
 ```ocaml
 $ git clone https://github.com/HorrorPills/ChatGPT-Gnome-Desktop-Extension && cd ChatGPT-Gnome-Desktop-Extension && sudo make install
 ```
