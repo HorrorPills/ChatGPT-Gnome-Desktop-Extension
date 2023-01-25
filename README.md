@@ -31,6 +31,14 @@ EARLY VERSION | WORK IN PROGRESS
 
 ### HOW TO INSTALL/UNINSTALL:
 
+#### On Gnome 42
+
+Make sure you have `libsoup 3` and `webkit2 4.1` installed.
+
+#### On Gnome 43
+
+Should work out of the box
+
 To install the chatgpt gnome desktop ext. clone this repo, cd into the ext dir. and run `make install`
 <br>
 <br>`DO NOT RUN THE FOLLOWING COMMANDS AS SUDO`
