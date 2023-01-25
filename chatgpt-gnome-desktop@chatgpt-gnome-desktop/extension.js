@@ -1,10 +1,11 @@
+imports.gi.versions.Gtk = '3.0';
+imports.gi.versions.WebKit2 = '4.1';
+
 const St = imports.gi.St;
 const Main = imports.ui.main;
 const ExtensionUtils = imports.misc.extensionUtils;
 const Me = imports.misc.extensionUtils.getCurrentExtension();
 const Webkit = imports.gi.WebKit2;
-// Fix Webkit namespace load
-imports.gi.versions.WebKit2 = '4.0';
 const Gtk = imports.gi.Gtk;
 const Gio = imports.gi.Gio;
 
