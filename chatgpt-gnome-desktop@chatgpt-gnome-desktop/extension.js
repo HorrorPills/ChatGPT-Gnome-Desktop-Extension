@@ -8,9 +8,10 @@ const Me = imports.misc.extensionUtils.getCurrentExtension();
 const Webkit = imports.gi.WebKit2;
 const Gtk = imports.gi.Gtk;
 const Gio = imports.gi.Gio;
+const PopupMenu = imports.ui.popupMenu;
 
 
-let button;
+let button, menu
 
 function init() {
     button = new St.Bin({
@@ -28,13 +29,50 @@ function init() {
     });
 
     button.set_child(icon);
-    button.connect('button-press-event', _handleClick);
+    button.connect('button-press-event', function(actor, event) {
+        if (event.get_button() == 1) {
+            toggleWindow();
+        } else if (event.get_button() == 3) {
+            toggleMenu();
+        }
+    })
+
+    //create the menu
+    menu = new PopupMenu.PopupMenu(button, 0.0, St.Side.TOP, 0);
+    menu.actor.add_style_class_name('panel-status-menu-box');
+    Main.uiGroup.add_actor(menu.actor);
+    menu.actor.hide();
+
+    //create menu items
+    menuRestart = new PopupMenu.PopupMenuItem("Restart");
+    menuQuit = new PopupMenu.PopupMenuItem("Quit");
+
+    //add menu items to menu
+    menu.addMenuItem(menuRestart);
+    menu.addMenuItem(menuQuit);
+
+    //connect menu items to functions
+    menuRestart.connect('activate', function() {
+        if(webView) {
+            webView.reload();
+        }
+    }
+    );
+    menuQuit.connect('activate', function() {
+        if(window) {
+            webView.destroy();
+            window.destroy();
+            window = null;
+        }
+    }
+    );
+
 }
 
 // Open GTK Window when the menubar button is clicked.
 let window, webView;
 
-function _handleClick() {
+function toggleWindow() {
     if (!window) {
         //set window style- in this case TOPLEVEL
         window = new Gtk.Window({
@@ -67,6 +105,14 @@ function _handleClick() {
         window.hide();
     } else {
         window.show_all();
+    }
+}
+
+function toggleMenu() {
+    if (menu.isOpen) {
+        menu.close();
+    } else {
+        menu.open();
     }
 }
 
