@@ -12,6 +12,8 @@ const PopupMenu = imports.ui.popupMenu;
 
 
 let button, menu
+//the process that the window will open in
+let proc
 
 function init() {
     button = new St.Bin({
@@ -53,59 +55,40 @@ function init() {
 
     //connect menu items to functions
     menuRestart.connect('activate', function() {
-        if(webView) {
-            webView.reload();
-        }
+        reloadWindow();
     }
     );
     menuQuit.connect('activate', function() {
-        if(window) {
-            webView.destroy();
-            window.destroy();
-            window = null;
-        }
-    }
-    );
+      killWindow();
+    });
 
 }
 
-// Open GTK Window when the menubar button is clicked.
-let window, webView;
-
 function toggleWindow() {
-    if (!window) {
-        //set window style- in this case TOPLEVEL
-        window = new Gtk.Window({
-            type: Gtk.WindowType.TOPLEVEL
-        });
-        //remove window interaction buttons
-        window.decorated = false;
-        //set the size of the window
-        window.set_default_size(350, 550);
-        //set the border radius of the window
-        // !!! not yet implemented !!!       
-        //make the window non resizeable
-        window.resizable = false;
-        //enable scrolling inside the window
-        scrolled_window = new Gtk.ScrolledWindow();
-        //open the website
-        webView = new Webkit.WebView();
-        scrolled_window.add(webView);
-        //load the URL and add it to WebView
-        webView.load_uri('https://chat.openai.com/chat');
-        window.add(scrolled_window);
-        //window positioning
-        window.set_position(Gtk.WindowPosition.MOUSE);
-        //skip showing in the taskbar
-        window.set_skip_taskbar_hint(true);
-        //open the window
-        window.show_all();
-        //check if the window is open, if yes, close it after clicking the menubar button
-    } else if (window.get_visible()) {
-        window.hide();
-    } else {
-        window.show_all();
-    }
+  if(!proc){
+    proc = Gio.Subprocess.new(
+      ['gjs', Me.path + '/window.js'],
+      Gio.SubprocessFlags.STDOUT_PIPE | Gio.SubprocessFlags.STDERR_PIPE
+    );
+    return;
+  }
+  //TODO: find a way to hide the window instead of killing it
+  killWindow();
+}
+
+function reloadWindow(){
+  if(!proc) return;
+  proc.force_exit();
+  proc = Gio.Subprocess.new(
+    ['gjs', Me.path + '/window.js'],
+    Gio.SubprocessFlags.STDOUT_PIPE | Gio.SubprocessFlags.STDERR_PIPE
+  );
+}
+
+function killWindow(){
+  if(!proc) return;
+  proc.force_exit();
+  proc = null;
 }
 
 function toggleMenu() {
