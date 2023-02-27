@@ -23,7 +23,7 @@ EARLY VERSION | WORK IN PROGRESS
  
 ### TO-DO & INFO:
 
-- Clicking & Scrolling using the mouse within the extension window is buggy (Using keyboard navigation is recommended). This will be fixed.
+- Fixed mouse clicking. Thanks Im-Stivik !  
 - Cache & Cookies storing for the comfort of not having to log in each time after system/extension restart.
 - Add Gnome 43 support (potentially fixed, testing)
 
