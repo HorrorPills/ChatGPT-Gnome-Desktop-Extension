@@ -22,10 +22,9 @@ EARLY VERSION | WORK IN PROGRESS
 
  
 ### TO-DO & INFO:
-
-- Fixed mouse clicking. Thanks Im-Stivik !  
-- Cache & Cookies storing for the comfort of not having to log in each time after system/extension restart.
-- Add Gnome 43 support (potentially fixed, testing)
+- Cache & Cookies storing.
+- Gnome 44 is supported.
+- Minor bug fixes and overall performance.
 
 ---
 
