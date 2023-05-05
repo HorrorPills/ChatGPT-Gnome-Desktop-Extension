@@ -8,7 +8,7 @@ Gnome just became even more powerful thanks to ChatGPT now being available from 
 </p>
 
 <h2><p align="center">
-EARLY VERSION | WORK IN PROGRESS
+EARLY PREVIEW VERSION | WORK IN PROGRESS
 </p>
 
 <br>
