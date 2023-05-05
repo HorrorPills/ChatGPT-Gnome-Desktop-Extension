@@ -13,7 +13,7 @@ EARLY PREVIEW VERSION | WORK IN PROGRESS
 
 <br>
 <!-- screenshots -->
-<details markdown='1'><summary align="center">SCREENSHOTS</summary><div align="center">
+<details markdown='1'><summary align="center">CLICK HERE FOR SCREENSHOTS</summary><div align="center">
 
 ![Screenshot from 2023-01-13 16-53-54](https://user-images.githubusercontent.com/21268783/212362417-1e06b82e-8abd-400a-9659-ba25611cd3ae.png)
 ![Screenshot from 2023-01-13 16-57-31](https://user-images.githubusercontent.com/21268783/212363907-ce25b9d3-dda9-4586-ae66-29fc2a118831.png)
