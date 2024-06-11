@@ -20,6 +20,7 @@ Gnome just became even more powerful thanks to ChatGPT now being available from 
 - Gnome 44, 45, 46 is supported
 - Minor bug fixes and overall performance.
 - Fix bug with window positioning
+- Add a notification when ChatGPT servers are down (the extension cant connect)
 
 ---
 
