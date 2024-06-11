@@ -34,12 +34,12 @@ To install the chatgpt gnome desktop ext. clone this repo, cd into the ext dir. 
 <br>
 <br>`DO NOT RUN THE FOLLOWING COMMANDS AS SUDO`
 ```ocaml
-$ git clone https://github.com/HorrorPills/ChatGPT-Gnome-Desktop-Extension && cd ChatGPT-Gnome-Desktop-Extension && make install
+git clone https://github.com/HorrorPills/ChatGPT-Gnome-Desktop-Extension && cd ChatGPT-Gnome-Desktop-Extension && make install
 ```
 
 To uninstall it. run `make uninstall`
 ```ocaml
-$ git clone https://github.com/HorrorPills/ChatGPT-Gnome-Desktop-Extension && cd ChatGPT-Gnome-Desktop-Extension && make uninstall
+git clone https://github.com/HorrorPills/ChatGPT-Gnome-Desktop-Extension && cd ChatGPT-Gnome-Desktop-Extension && make uninstall
 ```
 
 ---
