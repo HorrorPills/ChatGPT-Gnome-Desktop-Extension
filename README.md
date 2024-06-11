@@ -20,21 +20,15 @@ EARLY PREVIEW VERSION | WORK IN PROGRESS
 
  
 ### TO-DO & INFO:
-- Cache & Cookies storing.
-- Gnome 44 is supported.
+- Gnome 44, 45, 46 is supported
 - Minor bug fixes and overall performance.
+- Fix bug with window positioning
 
 ---
 
 ### HOW TO INSTALL/UNINSTALL:
 
-#### On Gnome 42
-
-Make sure you have `libsoup 3` and `webkit2 4.1` installed.
-
-#### On Gnome 43
-
-Should work out of the box
+#### On Gnome (WayLand)
 
 To install the chatgpt gnome desktop ext. clone this repo, cd into the ext dir. and run `make install`
 <br>
@@ -51,30 +45,6 @@ $ git clone https://github.com/HorrorPills/ChatGPT-Gnome-Desktop-Extension && cd
 ---
 
 ### KNOWN ISSUES:
-
-- Possibly not fully working on Wayland. Use Xorg.
-- `Requiring WebKit2, version none: Requiring namespace 'Gtk' version '4.0', but '3.0' is already loaded` can appear on Gnome 43.
-
----
-
-### EXTRAS:
-
-On Ubuntu and Debian-based distributions, you can install the latest version of GTK 4 by running the following command in the terminal:
-
-```ocaml
-$ sudo apt install libgtk-4-dev
-```
-
-On Arch Linux and its derivatives, you can install GTK 4 by running the following command in the terminal:
-
-```ocaml
-$ sudo pacman -S gtk4
-```
-
-On Fedora, you can install GTK 4 by running the following command in the terminal:
-
-```ocaml
-$ sudo dnf install gtk4-devel
-```
+- Window might appear in incorrect position
 
 
