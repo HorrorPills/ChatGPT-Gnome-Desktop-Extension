@@ -8,16 +8,11 @@ Gnome just became even more powerful thanks to ChatGPT now being available from 
 </p>
 
 <h2><p align="center">
-EARLY PREVIEW VERSION | WORK IN PROGRESS
+WAYLAND IS NOW SUPPORTED
 </p>
-
 <br>
-
-
 ![Screenshot from 2023-01-13 16-53-54](https://user-images.githubusercontent.com/21268783/212362417-1e06b82e-8abd-400a-9659-ba25611cd3ae.png)
-![Screenshot from 2023-01-13 16-57-31](https://user-images.githubusercontent.com/21268783/212363907-ce25b9d3-dda9-4586-ae66-29fc2a118831.png)
-
-
+<p align="center">![Screenshot from 2023-01-13 16-57-31](https://user-images.githubusercontent.com/21268783/212363907-ce25b9d3-dda9-4586-ae66-29fc2a118831.png)</p>
  
 ### TO-DO & INFO:
 - Gnome 44, 45, 46 is supported
