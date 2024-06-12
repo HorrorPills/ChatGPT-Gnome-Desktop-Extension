@@ -28,14 +28,14 @@ Gnome just became even more powerful thanks to ChatGPT now being available from 
 
 #### On Gnome (WayLand)
 
-To install the chatgpt gnome desktop ext. clone this repo, cd into the ext dir. and run `make install`
+To install the ChatGPT Gnome Desktop Extension, clone this repo, cd into the ext dir. and run `make install`
 <br>
 <br>`DO NOT RUN THE FOLLOWING COMMANDS AS SUDO`
 ```ocaml
 git clone https://github.com/HorrorPills/ChatGPT-Gnome-Desktop-Extension && cd ChatGPT-Gnome-Desktop-Extension && make install
 ```
 
-To uninstall it. run `make uninstall`
+To uninstall it. Run `make uninstall`
 ```ocaml
 git clone https://github.com/HorrorPills/ChatGPT-Gnome-Desktop-Extension && cd ChatGPT-Gnome-Desktop-Extension && make uninstall
 ```
