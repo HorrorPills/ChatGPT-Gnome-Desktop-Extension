@@ -1,7 +1,10 @@
 imports.gi.versions.Gtk = '3.0';
 imports.gi.versions.WebKit2 = '4.1';
 
-const { GLib, Gtk, WebKit2, Gdk } = imports.gi;
+const GLib = imports.gi.GLib;
+const System = imports.system;
+const Gtk = imports.gi.Gtk;
+const WebKit2 = imports.gi.WebKit2;
 
 function log(message) {
     print('window.js: ' + message);
@@ -22,7 +25,8 @@ function prepareCookieStorage() {
 function createWindow(x, y) {
     log('Creating window');
     const appWindow = new Gtk.Window({
-        type: Gtk.WindowType.POPUP,
+        type: Gtk.WindowType.TOPLEVEL,
+        //type: null, //Gtk.WindowPosition.POPUP,
         default_width: 350,
         default_height: 550,
         title: 'ChatGPT'
@@ -53,7 +57,7 @@ function createWindow(x, y) {
 
 Gtk.init(null);
 
-const [, , x, y] = ARGV;
+const [x, y] = ARGV;
 createWindow(parseInt(x), parseInt(y));
 Gtk.main();
 log('Script execution completed');
