@@ -11,6 +11,7 @@ export default class ChatGPTGnomeDesktopExtension extends Extension {
         this.menu = null;
         this.proc = null;
         this.initialized = false;
+        this.automaticallyStartNewWindowAfterRestart = false;
     }
 
     enable() {
@@ -109,6 +110,11 @@ export default class ChatGPTGnomeDesktopExtension extends Extension {
                     log('Subprocess wait failed: ' + e.message);
                 }
                 this.proc = null;
+
+                if(this.automaticallyStartNewWindowAfterRestart){
+                    this.automaticallyStartNewWindowAfterRestart = false;
+                    this.toggleWindow();
+                }
             });
 
             return;
@@ -120,7 +126,7 @@ export default class ChatGPTGnomeDesktopExtension extends Extension {
     reloadWindow() {
         log('Reloading window');
         this.killWindow();
-        this.toggleWindow();
+        this.automaticallyStartNewWindowAfterRestart = true;
     }
 
     killWindow() {
