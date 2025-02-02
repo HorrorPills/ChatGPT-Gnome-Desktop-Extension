@@ -15,11 +15,6 @@ export default class ChatGPTGnomeDesktopExtension extends Extension {
     }
 
     enable() {
-        if (this.initialized) {
-            log('Extension already initialized');
-            return;
-        }
-        this.initialized = true;
 
         log('Initializing extension');
         this.button = new St.Bin({
