@@ -17,10 +17,9 @@ Gnome just became even more powerful thanks to ChatGPT now being available from 
 ![Screenshot from 2023-01-13 16-57-31](https://user-images.githubusercontent.com/21268783/212363907-ce25b9d3-dda9-4586-ae66-29fc2a118831.png)
  
 ### TO-DO & INFO:
-- Gnome 44, 45, 46 is supported
 - Minor bug fixes and overall performance.
 - Fix bug with window positioning
-- Add a notification when ChatGPT servers are down (the extension cant connect)
+- Improve the hide/show window mechanism, preserving the state of the window when hidden
 
 ---
 
