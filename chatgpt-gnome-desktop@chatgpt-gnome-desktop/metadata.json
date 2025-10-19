@@ -3,7 +3,7 @@
     "description": "Access ChatGPT From Your Gnome-Desktop!",
     "version": "1.2",
     "uuid": "chatgpt-gnome-desktop@chatgpt-gnome-desktop",
-    "shell-version": ["46","47","48"],
+    "shell-version": ["45","46","47","48","49"],
     "url": "https://github.com/HorrorPills/ChatGPT-Gnome-Desktop-Extension",
     "author": "Rafal Mioduszewski"
 }
